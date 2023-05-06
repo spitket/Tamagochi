@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -68,6 +67,18 @@ public class TamagochiManager : MonoBehaviour
     private void Awake()
     {
         instance= this;
+    }
+    void Start()
+    {
+        // Establecer todas las estadísticas al valor máximo
+        hungry = hungryThreshold;
+        clean = cleanThreshold;
+        happy = happyThreshold;
+    
+        // Actualizar las barras de estado en la UI
+        barHungry.fillAmount = GetHungry();
+        barClean.fillAmount = GetClean();
+        barHappy.fillAmount = GetHappy();
     }
     private void Feed(float amount)
     {

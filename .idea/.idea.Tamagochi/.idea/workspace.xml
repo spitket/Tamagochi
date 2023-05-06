@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d863e06-cb3b-4881-8fd8-b046b1df84f2" name="Changes" comment="" />
+    <list default="true" id="0d863e06-cb3b-4881-8fd8-b046b1df84f2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tamagochi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tamagochi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimatordelPlayer.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimatordelPlayer.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Eat.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Eat.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Happy.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Happy.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TamagochiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TamagochiManager.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,13 +30,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\sala_06\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\sala_06\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\sala_06\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\spart\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\spart\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\spart\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
@@ -33,6 +49,14 @@
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.21f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\sala_06\Documents\GitHub\Tamagochi -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\sala_06\Documents\GitHub\Tamagochi" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.21f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Users\spart\OneDrive\Documentos\#Projectos\Unity\2da entrega - Tamagochi 2021.3.11f1\Mi entrega\Tamagochi&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\spart\OneDrive\Documentos\#Projectos\Unity\2da entrega - Tamagochi 2021.3.11f1\Mi entrega\Tamagochi" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
@@ -75,6 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683061579807</updated>
       <workItem from="1683061582521" duration="784000" />
+      <workItem from="1683413224859" duration="1480000" />
     </task>
     <servers />
   </component>
