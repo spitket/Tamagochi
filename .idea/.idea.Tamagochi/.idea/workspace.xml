@@ -4,37 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d863e06-cb3b-4881-8fd8-b046b1df84f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tamagochi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tamagochi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Color.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Color.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flowers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Flowers.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Blop.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Blop.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Patrick.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Patrick.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plastic_4K_Diffuse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plastic_4K_Diffuse.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plastic_4K_Normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plastic_4K_Normal.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plastic_4K_Reflect.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plastic_4K_Reflect.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChangeStatButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ChangeStatButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerLevel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerLevel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sad.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sad.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TamagochiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TamagochiManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TouchPlayer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TouchPlayer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Skin_Patrick.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Skin_Patrick.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/among us + turbosmooth 1.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/among us + turbosmooth 1.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/among us.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/among us.obj.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="0d863e06-cb3b-4881-8fd8-b046b1df84f2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +93,7 @@
       <workItem from="1683413224859" duration="2620000" />
       <workItem from="1683480684733" duration="168000" />
       <workItem from="1683482458963" duration="1585000" />
-      <workItem from="1683487532084" duration="8109000" />
+      <workItem from="1683487532084" duration="8254000" />
     </task>
     <servers />
   </component>
