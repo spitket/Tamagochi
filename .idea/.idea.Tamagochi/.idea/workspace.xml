@@ -6,13 +6,34 @@
   <component name="ChangeListManager">
     <list default="true" id="0d863e06-cb3b-4881-8fd8-b046b1df84f2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tamagochi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tamagochi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Flowers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Flowers.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Blop.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Blop.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Patrick.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Patrick.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plastic_4K_Diffuse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plastic_4K_Diffuse.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plastic_4K_Normal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plastic_4K_Normal.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plastic_4K_Reflect.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plastic_4K_Reflect.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimatordelPlayer.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimatordelPlayer.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Eat.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Eat.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Happy.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Happy.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChangeStatButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ChangeStatButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerLevel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerLevel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sad.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sad.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TamagochiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TamagochiManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TouchPlayer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TouchPlayer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skin_Patrick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skin_Patrick.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/among us + turbosmooth 1.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/among us + turbosmooth 1.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/among us.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/among us.obj.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,26 +45,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\spart\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\spart\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\spart\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\spart\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\spart\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\spart\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.21f1\Editor\Unity.exe" />
@@ -99,7 +120,10 @@
       <option name="presentableId" value="Default" />
       <updated>1683061579807</updated>
       <workItem from="1683061582521" duration="784000" />
-      <workItem from="1683413224859" duration="1480000" />
+      <workItem from="1683413224859" duration="2620000" />
+      <workItem from="1683480684733" duration="168000" />
+      <workItem from="1683482458963" duration="1585000" />
+      <workItem from="1683487532084" duration="8109000" />
     </task>
     <servers />
   </component>

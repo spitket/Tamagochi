@@ -8,62 +8,21 @@ public enum STATS
 }
 public class TamagochiManager : MonoBehaviour
 {
-    public float hungry, hungryThreshold = 10;
-    public float clean, cleanThreshold = 10;
-    public float happy, happyThreshold = 10;
+    public static TamagochiManager instance;
+    
+    public float hungry, hungryThreshold = 50;
+    public float clean, cleanThreshold = 15;
+    public float happy, happyThreshold = 30;
+    public float madness = 0f;
+    public float madnessTime = 0f;
+    public bool isMad = false;
+
     public ParticleSystem sickParticles;
     public Animator anim;
-    public static TamagochiManager instance;
+    
 
     public Image barHungry, barClean, barHappy;
-    private void Update()
-    {
-        barHungry.fillAmount = GetHungry();
-        barClean.fillAmount= GetClean();
-        barHappy.fillAmount = GetHappy();
-        if(GetHungry()< .25f || GetClean() < .25f 
-            || GetHappy() < .25f)
-        {
-            anim.SetBool("Sad", true);
-            if(sickParticles.isStopped)
-            {
-                sickParticles.Play();
-            }            
-        }
-        else
-        {
-            anim.SetBool("Sad", false);
-            if(!sickParticles.isStopped)
-            {
-                sickParticles.Stop();
-            }            
-        }
-        if (GetHungry() > .75f || GetClean() > .75f
-            || GetHappy() > .75f)
-        {
-            anim.SetBool("Happy", true);
-        }
-        else
-        {
-            anim.SetBool("Happy", false);
-        }
-
-
-
-    }
-    public float GetHungry()
-    {
-
-        return hungry / hungryThreshold;
-    }
-    public float GetClean()
-    {
-        return clean / cleanThreshold;
-    }
-    public float GetHappy()
-    {
-        return happy / happyThreshold;
-    }
+   
     private void Awake()
     {
         instance= this;
@@ -79,6 +38,119 @@ public class TamagochiManager : MonoBehaviour
         barHungry.fillAmount = GetHungry();
         barClean.fillAmount = GetClean();
         barHappy.fillAmount = GetHappy();
+        
+        // Llamar al método UpdateStats() cada 1 segundo
+        InvokeRepeating("UpdateStats", 1f, 1f);
+        }
+    private void Update()
+    {
+        barHungry.fillAmount = GetHungry();
+        barClean.fillAmount= GetClean();
+        barHappy.fillAmount = GetHappy();
+        if(GetHungry()< .15f || GetClean() < .15f 
+            || GetHappy() < .20f)
+        {
+            anim.SetBool("Sad", true);
+            if(sickParticles.isStopped)
+            {
+                sickParticles.Play();
+            }            
+        }
+        else
+        {
+            anim.SetBool("Sad", false);
+            if(!sickParticles.isStopped)
+            {
+                sickParticles.Stop();
+            }            
+        }
+        if (GetHappy() > .85f)
+        {
+            anim.SetBool("Happy", true);
+        }
+        else
+        {
+            anim.SetBool("Happy", false);
+        }
+
+        if (isMad)
+        {
+            anim.SetBool("Mad", true);
+        }
+        else
+        {
+            anim.SetBool("Mad", false);
+        }
+    }
+    public float GetHungry()
+    {
+
+        return hungry / hungryThreshold;
+    }
+    public float GetClean()
+    {
+        return clean / cleanThreshold;
+    }
+    public float GetHappy()
+    {
+        return happy / happyThreshold;
+    }
+
+    void UpdateStats()
+    {
+        float rand = Random.Range(0f, 1f);
+        if (rand > 0.9f)
+        {
+            GoMad();
+        }
+        if (isMad)
+        {
+            // Cambiamos las estadísticas de manera aleatoria y brusca
+            hungry += Random.Range(-13f, 6f);
+            clean += Random.Range(-7f, 6f);
+            happy += Random.Range(-11f, 7f);
+
+            // Asegurarnos de que las estadísticas no superen los valores máximos y mínimos
+            hungry = Mathf.Clamp(hungry, 0f, hungryThreshold);
+            clean = Mathf.Clamp(clean, 0f, cleanThreshold);
+            happy = Mathf.Clamp(happy, 0f, happyThreshold);
+
+            // Actualizar las barras de estado en la UI
+            barHungry.fillAmount = GetHungry();
+            barClean.fillAmount = GetClean();
+            barHappy.fillAmount = GetHappy();
+        }
+        else
+        {
+            // Disminuir las estadísticas en una cantidad fija cada segundo
+            hungry -= 1f;
+            clean -= 1f; 
+            happy -= 1f;
+
+                // Asegurarse de que las estadísticas no sean negativas
+            hungry = Mathf.Max(hungry, 0f); 
+            clean = Mathf.Max(clean, 0f);
+            happy = Mathf.Max(happy, 0f);
+
+                // Actualizar las barras de estado en la UI
+            barHungry.fillAmount = GetHungry();
+            barClean.fillAmount = GetClean();
+            barHappy.fillAmount = GetHappy();
+        }
+        
+    }
+
+    public void GoMad()
+    {
+        if (!isMad)
+        {
+            isMad = true;
+            Invoke("StopMadness", 3f); // Invocamos el método StopMadness después de 3 segundos
+        }
+    }
+    private void StopMadness()
+    {
+        isMad = false;
     }
     private void Feed(float amount)
     {
@@ -125,5 +197,5 @@ public class TamagochiManager : MonoBehaviour
     {
         anim.SetBool("Eat", false);
     }
-
+    
 }
