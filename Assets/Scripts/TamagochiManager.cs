@@ -13,13 +13,12 @@ public class TamagochiManager : MonoBehaviour
     public float hungry, hungryThreshold = 50;
     public float clean, cleanThreshold = 15;
     public float happy, happyThreshold = 30;
-    public float madness = 0f;
-    public float madnessTime = 0f;
+    
     public bool isMad = false;
-
+    
     public ParticleSystem sickParticles;
     public Animator anim;
-    
+    public Button disabledButton;
 
     public Image barHungry, barClean, barHappy;
    
@@ -47,8 +46,13 @@ public class TamagochiManager : MonoBehaviour
         barHungry.fillAmount = GetHungry();
         barClean.fillAmount= GetClean();
         barHappy.fillAmount = GetHappy();
-        if(GetHungry()< .15f || GetClean() < .15f 
-            || GetHappy() < .20f)
+        // Check if any of the stats have reached zero
+        if (hungry <= 0 || clean <= 0 || happy <= 0)
+        {
+            Perder(); //llamar a funcion de perder juego
+        }
+        
+        if(GetHappy() < .20f)
         {
             anim.SetBool("Sad", true);
             if(sickParticles.isStopped)
@@ -63,6 +67,14 @@ public class TamagochiManager : MonoBehaviour
             {
                 sickParticles.Stop();
             }            
+        }
+        if(GetHungry()< .15f)
+        {
+            anim.SetBool("Hungry", true);
+        }
+        else
+        {
+            anim.SetBool("Hungry", false);
         }
         if (GetHappy() > .85f)
         {
@@ -95,13 +107,14 @@ public class TamagochiManager : MonoBehaviour
     {
         return happy / happyThreshold;
     }
-
+    
     void UpdateStats()
     {
         float rand = Random.Range(0f, 1f);
-        if (rand > 0.9f)
+        if (rand > 0.97f )
         {
             GoMad();
+            
         }
         if (isMad)
         {
@@ -145,7 +158,7 @@ public class TamagochiManager : MonoBehaviour
         if (!isMad)
         {
             isMad = true;
-            Invoke("StopMadness", 3f); // Invocamos el método StopMadness después de 3 segundos
+            Invoke("StopMadness", 3f); // Invocamos el metodo StopMadness después de 3 segundos
         }
     }
     private void StopMadness()
@@ -193,9 +206,32 @@ public class TamagochiManager : MonoBehaviour
                 break;
         }
     }
+    
+  
+    
+    
     public void SetEat()
     {
         anim.SetBool("Eat", false);
     }
-    
+    public void Perder()
+    {
+        StopMadness();
+        anim.SetBool("GameOver", true);// reproducir animación de muerte
+        // reiniciar el juego después de unos segundos
+        Invoke("Restart", 3f);
+    }
+    private void Restart()
+    {
+      
+
+        // reiniciar las barras de estado
+        hungry = hungryThreshold;
+        clean = cleanThreshold;
+        happy = happyThreshold;
+        
+        //desactivar anim de muerte por precaucion
+        anim.SetBool("GameOver", false);
+    }
 }
+

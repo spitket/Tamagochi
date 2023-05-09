@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d863e06-cb3b-4881-8fd8-b046b1df84f2" name="Changes" comment="" />
+    <list default="true" id="0d863e06-cb3b-4881-8fd8-b046b1df84f2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tamagochi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tamagochi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/defaultMat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/defaultMat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TamagochiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TamagochiManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/starving.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/starving.anim" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,6 +106,9 @@
       <workItem from="1683480684733" duration="168000" />
       <workItem from="1683482458963" duration="1585000" />
       <workItem from="1683487532084" duration="8254000" />
+      <workItem from="1683509138439" duration="615000" />
+      <workItem from="1683553319882" duration="4608000" />
+      <workItem from="1683592267793" duration="6674000" />
     </task>
     <servers />
   </component>
